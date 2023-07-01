@@ -22,9 +22,9 @@ return images.map(({preview, original, description}) => {
 }
 imageContainer.insertAdjacentHTML('beforeend',imageMarkup )
 
-console.log(galleryItems);
+
 
 let lightbox = new SimpleLightbox('.gallery a', {captionsData: `alt`, captionDelay: 250,})
 
 
-console.log(lightbox);
+

@@ -10,9 +10,9 @@ const onPlay = function ({seconds}) {
 };
 player.on('timeupdate',throttle (onPlay, 1000))
 
-const LS = localStorage.getItem("videoplayer-current-time")
+const item = localStorage.getItem("videoplayer-current-time")
 
-player.setCurrentTime(LS).then(function(seconds) {
+player.setCurrentTime(item).then(function(seconds) {
    
 }).catch(function(error) {
     switch (error.name) {
